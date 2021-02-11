@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="icon" href="../img/Logo_Letra.png" type="image/gif" sizes="16x16"> 
+    <link rel="stylesheet" href="../sass/css/flores.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;900&display=swap" rel="stylesheet">
+</head>
+<body class="fondoRosa">
+    <header>
+        <img src="../img/Logo_Letra.png" alt="logo_flor" class="imagenLogo"/>
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../index.html#CATALOGO">CATALOGO</a></li>
+            <li><a href="../views/Carrito.html">CARRITO</a></li>
+            <li><a href="../views/Contacto.html">CONTACTO</a></li>
+            <li><a href="../views/Nosotros.html">NOSOTROS</a></li>
+        </ul>
+    </header>
+    <h1>CARRITO</h1>
+    <div class="flexRowNowrap">
+        <section class="width50" style="padding: 0 50px;">
+            <form action="index.html" method="post" id="formularioCarrito">
+                <fieldset>
+                    <legend>
+                        <h3 for="email">DATOS DE CONTACTO</h3>
+                    </legend>
+                        <input type="email" id="email" placeholder="email"/>
+                </fieldset>
+                <fieldset class="flexColumn">
+                    <legend><h3>ENTREGA</h3></legend>
+                        <input type="text" id="pais" placeholder="País" class="margenBottom25">
+                        <input type="number" id="postal" placeholder="Código postal" class="margenBottom25">
+                        <select name="Medio de Pago" id="Medio_de_pago" class="margenBottom25">
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Tarjeta_Credito">Tarjeta de Crédito</option>
+                                <option value="Tarjeta_Debito">Tarjeta de Débito</option>
+                                <option value="Mercado_Pago">Mercado Pago</option>
+                        </select>
+                        <div class="colorear">
+                            <a href=""><span>CONFIRMAR</span></a>
+                        </div>
+                    <!--<input type="submit" value="CONFIRMAR" style="margin-top: auto;">-->
+            </fieldset>
+            </form>
+        </section>
+        <section class="flexRowNowrap width50" id="resumenCompra">
+            <div class="width50 padding50" id="detalleResumen">
+                <h3 id="productoResumen">FLOR SMALL</h3>
+                <div>
+                    <h4>SUBTOTAL $$$</h4>
+                    <h3>TOTAL $$$</h3>
+                </div>
+            </div>
+            <div class="width50 padding50">
+                <img src="../img/flor_small_catalogo.jpg" alt="FLOR SMALL" style="width: 100%"/>
+            </div>
+        </section>
+    </div>
+    <footer class="navBar">
+        <img src="../img/Logo_Letra.png" alt="LOGO">
+        <span>EMAIL</span>
+        <span>TELEFONO</span>
+        <div id="redesSociales">
+            <a href=""><img src="../img/instagram_logo.png" alt="INSTAGRAM"></a>
+            <a href=""><img src="../img/gmail_logo.png" alt="GMAIL"></a>
+            <a href=""><img src="../img/whatsapp_logo.png" alt="WHATSAPP"></a>
+        </div>
+    </footer>
+</body>
+</html>
